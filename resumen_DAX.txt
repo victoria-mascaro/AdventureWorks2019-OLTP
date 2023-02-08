@@ -1,0 +1,36 @@
+##DAX
+DISTINCTCOUNT()
+SUM()
+AVERAGE()
+CALCULATE()
+FILTER()
+DIVIDE()
+SWITCH()
+TRUE()
+SELECTEDVALUE()
+
+Total Profit:=SUM(FactInternetSales[SalesAmount])
+		('Tabla_conPalabraCLAVE'[columna])
+
+Total Cost:=SUM(FactInternetSales[TotalProductCost])
+
+Colonne derivate
+Margine=profito-costo
+[TotalMargin] =FactInternetSales[SalesAmount]-FactInternetSales[TotalProductCost]
+
+
+Medida calculada:
+Total Margin 1:= SUM(FactInternetSales[TotalMargin])
+
+Total Margin 2:= [Total Profit] - [Total Cost]
+más eficiente, porque usa medidas ya calculadas
+
+--Tabla calculada
+Ej: replicar DimDate
+sobre carpeta tablas->nueva tabla calculada
+= 'DimDate'
+Renombramos la Tabla Calculada como DimShipDate
+y renombramos la columna PK: ShipDateKey
+En el Modelo Relacional creo la relación con la nueva Tabla Calculada, 
+y elimino la relación DimDate con Fact, a través de la variable ShipDate
+
