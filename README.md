@@ -28,10 +28,12 @@ OLTP: On-Line Transaction Processing. -> fictional bicycle manufacturing company
 
 ## Data Model
 
-<img width="720" alt="Model" src="modeling.png">
+<img width="1080" alt="Model" src="https://github.com/victoria-mascaro/AdventureWorks2019-OLTP/blob/main/Modelling.png">
 
 
 ## Report and presentation
+
+Advertisement: Export caused changes to visualizations.
 
 [Power BI Dashboard](https://github.com/victoria-mascaro/AdventureWorks2019-OLTP/blob/main/DataAnalytics%20AdventureWorks.pdf)
 
